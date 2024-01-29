@@ -1,0 +1,48 @@
+.icon-div-container
+{
+  margin:auto auto auto auto;
+  max-width:50%;
+  max-height:50%;
+}
+
+.skill-icons {
+    display:flex;
+    justify-content:space-around;
+    flex-direction: row;
+    flex-wrap:wrap;
+    grid-gap: 15px;
+  }
+  
+  .skill-icons>img {
+    border-radius:50%;
+    border-style: solid;
+    border-color: #0138af;
+    height: 130px;
+    width: 130px;
+    background-color: #ffffff;
+
+  }
+
+.img-icon
+{
+    max-width: 130px;
+    max-height: 130px;
+    margin: 10px;
+    object-fit:scale-down;
+
+}
+
+.img-container
+{
+  border-radius:50%; 
+  border-style:solid;
+  border-width:5px; 
+  background-color: #ffffff; 
+  object-fit:fill;
+  border-color: #0138af;
+}
+
+.skill-icons>div
+{
+    flex-direction: column;
+}

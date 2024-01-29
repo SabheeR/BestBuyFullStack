@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Best Buy | Official Online Store | Shop Now & Save</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/png" href="/images/website-logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script language="JavaScript" type="text/javascript" src="script.js"></script>
+        <script src="main.js"></script>
+    </head>
+    
+    <body>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function menuDropDown() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+
+            function buttonClick(x){x.classList.toggle("change")}
+
+            function accountDropDown() {
+                document.getElementById("AccountDropdown").classList.toggle("show");
+              }
+              
+              // Close the dropdown if the user clicks outside of it
+              window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                    }
+                  }
+                }
+              }
+
+
+        </script>
+        <header>
+            <!-- Top portion of page - split into three sections -->
+            <div class="nav-container" style="background-color:#02287a;">
+            <div>
+                <!-- Very top portion of menu, links to Yardbird and other best buy websites -->
+            <div class="bottom-nav" style="margin-right: 28%;">
+                <div class="nav-wrapper">
+                    <a class="header" href="https://yardbird.com/">Yardbird</a>
+                    <a class="header" href="https://www.bestbuy.com/site/electronics/outlet-refurbished-clearance/pcmcat142300050026.c?id=pcmcat142300050026">Best Buy Outlet</a>
+                    <a class="header" href="https://www.bestbuy.com/site/electronics/bestbuy-business/pcmcat230900050001.c?id=pcmcat230900050001">Best Buy Business</a>
+                    <a class="header" href="https://www.bestbuy.com/services/triage/shopping">Shop with an Expert</a>
+                </div>
+            </div>
+            </div>
+            </div>
+            <!-- Middle section of the menu page, this has the best buy logo, search box, and menu button + more -->
+            <div>
+            <div class="nav-container" style="background-color:#0138af;" >
+                <div class="top-nav">
+                    <!-- Imported the best buy logo source form their site because it was too much work to edit in photoshop :) -->
+                    <svg aria-label="BestBuy.com" class="block" height="40" role="img" width="68" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 92">
+                        <path d="M127.6 66.66h31.33v25.09h-31.34l-7.8-7.34V74.06l7.81-7.4z" fill="#fff200"></path>
+                        <path d="M126.03 79.19c0 .86-.69 1.55-1.55 1.55-.86 0-1.55-.69-1.55-1.55 0-.86.69-1.55 1.55-1.55.85 0 1.55.7 1.55 1.55z" fill="#1d252c"></path>
+                        <path d="M127.2 57.76c0-1.17.94-2.12 2.12-2.12 1.2 0 2.12.94 2.12 2.11 0 1.19-.93 2.11-2.12 2.11-1.17 0-2.12-.9-2.12-2.1zm3.96-.01c0-1.07-.78-1.85-1.84-1.85-1.05 0-1.83.79-1.83 1.86 0 1.08.81 1.84 1.83 1.84 1.04 0 1.84-.77 1.84-1.85zm-2.55-1.13h.71c.48 0 .79.21.79.64v.01c0 .33-.21.51-.51.57l.64.97h-.35l-.61-.92h-.33v.92h-.33l-.01-2.19zm.72 1.03c.31 0 .46-.12.46-.37v-.01c0-.28-.16-.37-.46-.37h-.38v.75h.38zM30.21 19.81l.61-.22c5.92-3.18 6.93-11.05 1.16-15.36-2.58-2.06-6.09-3.09-10.55-3.09H2.1v39.61h20.47c5.25 0 16.12-.98 16.12-11.33-.01-7.91-8.29-9.54-8.48-9.61zM14.9 10.42h4.72c1.74-.04 3.23 1.18 3.21 2.9.02 1.73-1.48 2.94-3.21 2.9H14.9v-5.8zm8.82 20.12c-.74.7-1.67 1.04-2.78 1.04H14.9v-7.11h6.03c3.28-.18 5.27 3.8 2.79 6.07zM40.39 63.65l.61-.22c5.92-3.18 6.93-11.05 1.16-15.36-2.58-2.06-6.1-3.09-10.55-3.09h-19.3v39.61h20.43c5.25 0 16.12-.98 16.12-11.33 0-7.91-8.28-9.53-8.47-9.61zm-15.27-9.39h4.68c1.74-.04 3.23 1.18 3.22 2.9.01 1.73-1.48 2.94-3.22 2.9h-4.68v-5.8zm8.78 20.13c-.74.7-1.67 1.04-2.78 1.04h-6v-7.11h6c3.27-.18 5.26 3.8 2.78 6.07zM71.48 31.13H52.33v-6.21h15.63v-9.06H52.33v-5.08h19.19V1.13h-32v39.61h31.96v-9.61zM104.23 1.13v9.64h10.47v29.97h12.73V10.77h10.47V1.13h-33.67z" fill="#fff"></path>
+                        <path d="M89.75 30.5c-2.8 2.33-8.08-.25-10.16-2.38l-7.56 7.18.48.48c6.71 6.62 20.86 8.59 27.98 2.21 5.84-4.61 6.03-14.52-.04-18.59-2.29-1.46-5.4-2.86-7.97-3.52-1.31-.3-2.64-.73-3.53-1.25-2.85-1.53-.43-4.43 2.13-4.16 2.59 0 4.17 1.16 4.99 2l7.58-7.2-.14-.16C97.4-.99 84.27-1.92 77.89 3.77c-2.9 2.51-4.35 5.47-4.35 8.85-.16 8.34 7.15 11.23 13.83 13.19 1.42.6 3.28.97 3.44 2.47-.01.87-.36 1.61-1.06 2.22zM71.52 68.52c-.19 6.29-9.33 6.29-9.52 0V44.99H49.18v22.93c-.03 9.76 8.2 17.54 17.92 17.12 9.46 0 17.12-7.66 17.12-17.12V45h-12.7v23.52zM106.13 58.47 97.73 45H84.89l14.83 25.47v14.14h12.81V70.46L127.36 45h-12.84l-8.39 13.47z" fill="#fff"></path>
+                    </svg>
+                    <!-- Menu button with animation when clicked -->
+                    <div class="button-container" onClick="buttonClick(this)">
+                        <div onclick="menuDropDown()" style="margin-top:10px;">
+                        <div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>
+                        </div>
+                        <div onclick="menuDropDown()" class="dropdown">
+                            <button class="dropbtn font" style="border-style:none; background-color:#0138af; color:#ffffff; font-size:20px; font-weight:700;">Menu</button>
+                            <div id="myDropdown" class="dropdown-content font">
+                              <a style="border-bottom: 1px solid black;">Deals</a>
+                              <a style="border-bottom: 1px solid black;">Support and Services</a>
+                              <a style="border-bottom: 1px solid black;">Brands</a>
+                              <div style="color:#000000; margin:10px 0px 10px 15px;">Shop by Department</div>
+                              <a style="border-bottom: 1px solid black;">Home</a>
+                              <a style="border-bottom: 1px solid black;">Appliances</a>
+                              <a style="border-bottom: 1px solid black;">TV & Home Theater</a>
+                              <a style="border-bottom: 1px solid black;">Computer & Tablets</a>
+                              <a style="border-bottom: 1px solid black;">Cell Phones</a>
+                              <a style="border-bottom: 1px solid black;">Audio</a>
+                              <a style="border-bottom: 1px solid black;">Video games</a>
+                              <a style="border-bottom: 1px solid black;">Cameras, Camcorders & Drones</a>
+                              <a style="border-bottom: 1px solid black;">Home, Furniture & Office</a>
+                              <a style="border-bottom: 1px solid black;">Smart Home, Security & Wi-Fi</a>
+                              <a style="border-bottom: 1px solid black;">Car Electronics & GPS</a>
+                              <a style="border-bottom: 1px solid black;">Movies & Music</a>
+                              <a style="border-bottom: 1px solid black;">Wearable Technology</a>
+                              <a style="border-bottom: 1px solid black;">Health, Wellness & Fitness</a>
+                              <a style="border-bottom: 1px solid black;">Outdoor Living</a>
+                              <a style="border-bottom: 1px solid black;">Toys, Games & Collectibles</a>
+                              <a style="border-bottom: 1px solid black;">Electric Transportation</a>
+                              <a style="border-bottom: 1px solid black;">New & Featured</a>
+                            </div>
+                          </div>
+                    </div>
+                    <form class="searchBar" role="search">
+                        <!-- Search bar -->
+                        <input type="search" id="query" name="q" placeholder="What can we help you find today?" 
+                            aria-label="Search through site content">
+                        <button class="button-first"><svg class="svgSearchBar"viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
+                    </form>
+                    <!-- Find store nearby + icon from their site -->
+                    <div class="storeIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve" aria-hidden="true" role="img" width="30" height="31" fill="#fff"><path d="M19.25 22H4.75C3.23 22 2 20.77 2 19.25v-9.5c0-.41.34-.75.75-.75s.75.34.75.75v9.5c0 .69.56 1.25 1.25 1.25h14.5c.69 0 1.25-.56 1.25-1.25v-7.5c0-.69-.56-1.25-1.25-1.25-.04 0-.09 0-.13-.01l-2.36.01c-.41 0-.75-.33-.75-.75-.01-.41.32-.75.74-.75l2.5-.01c.06-.02.11.01.17.02C20.85 9.1 22 10.3 22 11.75v7.5c0 1.52-1.23 2.75-2.75 2.75z"></path><path d="M15.75 14.5h-7.5c-.41 0-.75.34-.75.75v6c0 .41.34.75.75.75s.75-.34.75-.75V16h2.25v5.25c0 .41.34.75.75.75s.75-.34.75-.75V16H15v5.25c0 .41.34.75.75.75s.75-.34.75-.75v-6c0-.41-.34-.75-.75-.75zM4.05 6.96c0-.41.34-.75.75-.75s.75.34.75.75a.749.749 0 1 1-1.5 0z"></path><path d="M15.75 12.5H5.25a.75.75 0 0 1-.53-.22l-3-3a.75.75 0 0 1-.22-.53v-3.5c0-.2.08-.39.22-.53l3-3a.75.75 0 0 1 .53-.22h10.5c.96 0 1.75.79 1.75 1.75v7.5c0 .96-.79 1.75-1.75 1.75zM5.56 11h10.19c.14 0 .25-.11.25-.25v-7.5c0-.14-.11-.25-.25-.25H5.56L3 5.56v2.88L5.56 11z"></path></svg>
+                        <div class="yourStore">Store Locator</div>
+                    </div>
+                    <!-- Cart + icon from their site -->
+                    <div class="storeIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve" aria-hidden="true" role="img" aria-label="Cart Icon" fill="white" height="26px" width="26px">
+                            <path d="M9 22.5c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3zM9 18c-.83 0-1.5.67-1.5 1.5S8.17 21 9 21s1.5-.67 1.5-1.5S9.83 18 9 18zm10 4.5c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3zm0-4.5c-.83 0-1.5.67-1.5 1.5S18.17 21 19 21s1.5-.67 1.5-1.5S19.83 18 19 18z"></path>
+                            <path d="M18.75 18h-11c-1.24 0-2.25-1.01-2.25-2.25s1.01-2.25 2.25-2.25h11.2c.12 0 .22-.08.24-.2l1.28-5.78c.08-.37-.01-.76-.25-1.05S19.64 6 19.26 6H5c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h14.26c.84 0 1.62.38 2.14 1.03.53.65.72 1.5.54 2.32l-1.28 5.78c-.18.81-.88 1.37-1.71 1.37H7.75c-.41 0-.75.34-.75.75s.34.75.75.75h11c.41 0 .75.34.75.75s-.34.75-.75.75z"></path>
+                            <path d="M7.25 15c-.34 0-.64-.23-.73-.57L3.9 3.95A1.25 1.25 0 0 0 2.69 3h-.94C1.34 3 1 2.66 1 2.25s.34-.75.75-.75h.94c1.26 0 2.36.86 2.67 2.08l2.62 10.49a.748.748 0 0 1-.73.93z"></path></svg>
+                        <div class="yourStore">Cart</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div style="background-color:#0138af; border-top-color:#ffffff;">
+            <nav class="bottom-nav">
+                <div class="nav-wrapper" style="display:flex;">
+                <a class="header" href="https://www.bestbuy.com/site/electronics/top-deals/pcmcat1563299784494.c?id=pcmcat1563299784494">Top Deals</a>
+                <a class="header" href="https://www.bestbuy.com/site/misc/deal-of-the-day/pcmcat248000050016.c?id=pcmcat248000050016"> Deal of the Day</a>
+                <a class="header" href="https://www.bestbuy.com/site/misc/yes-best-buy-sells-that/pcmcat1621542998180.c?id=pcmcat1621542998180">Yes, Best Buy Sells That</a>
+                <a class="header" href="https://www.bestbuy.com/site/electronics/best-buy-membership/pcmcat1679668833285.c?id=pcmcat1679668833285">My Best Buy Memberships</a>
+                <a class="header">More</a>
+                </div>
+                <div class="header" style="font-weight:bold; margin-left:8%">
+                    <div>
+                        <a class="storeIcon">
+                            <svg aria-hidden="true" role="img" viewBox="0 0 100 100" class="leading-icon" fill="white" width="20" height="20"></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve">
+                            <path d="M16 .76C7.6.76.76 7.6.76 16S7.6 31.24 16 31.24 31.24 24.4 31.24 16 24.4.76 16 .76zm10.23 23.7V23.2c0-2.6-1.14-5.06-3.12-6.75a.98.98 0 1 0-1.27 1.5 6.9 6.9 0 0 1 2.44 5.25v3.19a13.21 13.21 0 0 1-16.56 0V23.2a6.94 6.94 0 0 1 4.76-6.55A5.86 5.86 0 1 0 16 6.1a5.88 5.88 0 0 0-4.96 9 8.92 8.92 0 0 0-5.27 8.1v1.26A13.3 13.3 0 0 1 16 2.71a13.3 13.3 0 0 1 10.23 21.76zm-14.15-12.5a3.92 3.92 0 0 1 7.84 0 3.92 3.92 0 0 1-7.84 0z"></path></svg>
+                            
+                            <div onclick="accountDropDown()" class="font dropdown">
+                                <button class="Account-dropbtn font" style="background-color: #0138af; border-style:none; color:#ffffff;font-weight:bold;">Account</button>
+                                <div id="AccountDropdown" class="Account-dropdown-content font" style="width: 400px; height:300px;">
+                                    <form id="registrationForm" style="display: flex; flex-direction:column; align-items:center;">
+                                        <label for="email" style="margin-top: 20px;">Email:</label>
+                                        <input type="email" id="email" name="email" required><br>
+                                    
+                                        <label for="password">Password:</label>
+                                        <input type="password" id="password" name="password" required><br>
+                                    
+                                        <button type="submit">Register</button>
+                                      </form>
+                                  </div>  
+                            </div>
+                            
+                        </a>
+                    </div>
+                    <a class="header" style="font-weight:bold; margin-left:5%">Recently Viewed</a>
+                    <a class="header" style="font-weight:bold; margin-left:5%">Order Status</a>
+                    <a class="header" style="font-weight:bold; margin-left:5%">Saved Items</a>
+                </div>
+            </nav>
+            </div>
+        </header>
+        <div class="threeDaySale-row">
+        <div class="sale-event-background">
+            <div style="align-items:center;display: flex; flex-direction: row;">
+            <div style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top:50px;">
+                <div class="endsSunday"><div style="margin:5px; font-size:15px; font-weight:650;">Ends Sunday.</div></div>
+                <div style="display: flex; flex-direction: row;">
+                    <div style="font-weight: bold; font-size:80px;">3-Day </div>
+                    <div style="margin-left: 8px; color:#0138af; font-weight: bold;font-size:80px;">Sale</div>
+                </div>
+                <div style="font-size:25px;margin-bottom: 50px;">The deals you've been waiting to see.</div>
+            </div>
+            <div style="margin-left:50px;">
+                <div style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:14px;">Limited quantities. No rainchecks.</div>
+                <button class="c-button c-button-secondary c-button-sm" href="https://www.bestbuy.com/site/clp/sale-page/pcmcat185700050011.c?id=pcmcat185700050011">
+                    <div style="margin-left:5px;margin-right:5px;">Shop Now</div>
+                </button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- 3 Day Sale Section of the page -->
+        <div style="background-color: #9fccff4d">
+            <!-- Container containing all elements of the section -->
+            <div class="icon-div-container">
+            <div style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:18px; margin-bottom:15px;">Shop deals by category</div>
+                <!-- Icons within the sales section, each icon has a link to a best buy website -->
+                <div class="skill-icons">
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/myBBY.png"/>
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/top-deals/member-exclusive-deals/pcmcat1651770167686.c?id=pcmcat1651770167686">Exclusive Member Deals</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/laptop.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/laptop-and-computer-deals">Laptops & Computers</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/tv.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/tv-deals">TVs & Projectors</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/videogame.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/video-game-and-vr-deals">Video Games & Consoles</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/appliances.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/home-appliances/major-appliances-sale-event/pcmcat321600050000.c?id=pcmcat321600050000">Major Appliances</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/apple.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/top-deals/apple-deals/pcmcat1563304364690.c?id=pcmcat1563304364690">Apple</a>
+                    </div>
+              </div>
+              <div class="skill-icons">
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/cellPhone.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/top-deals/cell-phone-deals/pcmcat1563302848653.c?id=pcmcat1563302848653">Cell Phones</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/headphone.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/headphone-and-speaker-deals">Headphones</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/pc.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/pc-gaming-deals">PC Gaming</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/tablet.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/tablet-and-e-reader-deals">Tablets & E-Readers</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/soundbar.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/camera-and-camcorder-deals">Sound Bars & Audio</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/camera.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/camera-and-camcorder-deals">Cameras</a>
+                    </div>
+              </div>
+              <div class="skill-icons" style="margin-bottom:10px;">
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/watch.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/wearable-technology-deals">Smart Watches</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/coffee.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/small-appliance-deals">Small Appliances</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/home.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/smart-home-wi-fi-security-deals">Smart Home</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/printer.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/printer-and-home-office-deals">Printers & More</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/scooter.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/hoverboards-and-electric-scooters-deals">Electric Scooters</a>
+                    </div>
+                <div class="skill-icons">
+                    <img class="img-icon" src="images/home-page-icon/toys.jpg" />
+                    <a class="icon-text-style" href="https://www.bestbuy.com/site/promo/tech-toy-and-drone-deals">Collectibles & Toys</a>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <!-- You Viewed Section of the page -->
+        <!-- Header and link to see other viewed items -->
+        <div class="font" style="margin-bottom: 40px;">
+            <div style="display:flex;flex-direction:column;margin: 0px auto 0px 16%;">
+                <div class="you-viewed" style="">You Viewed</div>
+            <div class="you-viewed-whole-container" style="color:hsl(221, 99%, 35%); font-size:15px;">
+                <a>Manage all your viewed items</a>
+            </div>
+            </div>
+            <!-- Items that you viewed, used grid and flex rows to align items for it to be responsive for different sized screens -->
+            <div style="display: flex; align-items: center; justify-content:center;">
+            <div class="you-viewed-item-row" style="margin-top:-40px;">
+                <div class="you-viewed-item-container">
+                    <img class="" src="images/viewed/apple-watch.jpg"/>
+                    <div class="in-line-box" style="margin:0px 10px 10px 10px;"><a style="color:#0138af;" href="https://www.bestbuy.com/site/apple-watch-series-9-gps-cellular-45mm-silver-stainless-steel-case-with-silver-milanese-loop-silver/6533206.p?skuId=6533206">Apple Watch Series 9 (GPS + Cellular) 45mm Silver Stainless Steel Case with...</a></div>
+                    <div><svg style="margin-bottom:-5px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve" aria-hidden="true" role="img" class="save-svg" data-testid="saved-item-empty" fill="#0046be" height="20" width="16"><path d="M18.25 22.37c-.27 0-.55-.06-.8-.19L12 19.11l-5.43 3.05c-.57.29-1.21.27-1.73-.05-.53-.32-.84-.88-.84-1.49V4.25C4 2.73 5.23 1.5 6.75 1.5h10.5C18.77 1.5 20 2.73 20 4.25v16.36c0 .61-.31 1.17-.84 1.49-.28.18-.59.27-.91.27zM12 17.5c.13 0 .25.03.37.1l5.79 3.25c.09.04.17 0 .22-.02.04-.03.12-.09.12-.21V4.25c0-.69-.56-1.25-1.25-1.25H6.75c-.69 0-1.25.56-1.25 1.25v16.37c0 .12.07.19.12.21.04.03.14.06.24.01l5.77-3.24c.12-.07.24-.1.37-.1z"></path></svg>
+                        Save</div>
+                </div>
+                <div class="you-viewed-item-container">
+                        <img src="images/viewed/hue.jpg"/>
+                        <div class="in-line-box" style="margin:45px 10px 10px 10px;"><a style="color:#0138af;" href="https://www.bestbuy.com/site/philips-hue-play-hdmi-sync-box-black/6371722.p?skuId=6371722">Philips - Hue Play HDMI Sync Box - Black</a></div>
+                        <div><svg style="margin-bottom:-5px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve" aria-hidden="true" role="img" class="save-svg" data-testid="saved-item-empty" fill="#0046be" height="20" width="16"><path d="M18.25 22.37c-.27 0-.55-.06-.8-.19L12 19.11l-5.43 3.05c-.57.29-1.21.27-1.73-.05-.53-.32-.84-.88-.84-1.49V4.25C4 2.73 5.23 1.5 6.75 1.5h10.5C18.77 1.5 20 2.73 20 4.25v16.36c0 .61-.31 1.17-.84 1.49-.28.18-.59.27-.91.27zM12 17.5c.13 0 .25.03.37.1l5.79 3.25c.09.04.17 0 .22-.02.04-.03.12-.09.12-.21V4.25c0-.69-.56-1.25-1.25-1.25H6.75c-.69 0-1.25.56-1.25 1.25v16.37c0 .12.07.19.12.21.04.03.14.06.24.01l5.77-3.24c.12-.07.24-.1.37-.1z"></path></svg>
+                            Save</div>
+                </div>
+                <div class="you-viewed-item-container">
+                        <img src="images/viewed/xbox-x.jpg"/>
+                        <div class="in-line-box" style="margin:35px 10px 10px 10px;"><a style="color:#0138af;" href="https://www.bestbuy.com/site/microsoft-xbox-series-x-1tb-console-black/6428324.p?skuId=6428324">Microsoft - Xbox Series X 1TB Console - Black</a></div>
+                        <div><svg style="margin-bottom:-5px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve" aria-hidden="true" role="img" class="save-svg" data-testid="saved-item-empty" fill="#0046be" height="20" width="16"><path d="M18.25 22.37c-.27 0-.55-.06-.8-.19L12 19.11l-5.43 3.05c-.57.29-1.21.27-1.73-.05-.53-.32-.84-.88-.84-1.49V4.25C4 2.73 5.23 1.5 6.75 1.5h10.5C18.77 1.5 20 2.73 20 4.25v16.36c0 .61-.31 1.17-.84 1.49-.28.18-.59.27-.91.27zM12 17.5c.13 0 .25.03.37.1l5.79 3.25c.09.04.17 0 .22-.02.04-.03.12-.09.12-.21V4.25c0-.69-.56-1.25-1.25-1.25H6.75c-.69 0-1.25.56-1.25 1.25v16.37c0 .12.07.19.12.21.04.03.14.06.24.01l5.77-3.24c.12-.07.24-.1.37-.1z"></path></svg>
+                            Save</div>
+                </div>
+                <div class="you-viewed-item-container">
+                        <img src="images/viewed/lg-oled-65.jpg" style="width:150px; height:90px;"/>
+                        <div class="in-line-box" style="margin:25px 10px 10px 10px"><a style="color:#0138af;" href="https://www.bestbuy.com/site/lg-65-class-c3-series-oled-4k-uhd-smart-webos-tv/6535929.p?skuId=6535929">LG - 65" Class C3 Series OLED 4K UHD Smart webOS TV</a></div>
+                        <div><svg style="margin-bottom:-5px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve" aria-hidden="true" role="img" class="save-svg" data-testid="saved-item-empty" fill="#0046be" height="20" width="16"><path d="M18.25 22.37c-.27 0-.55-.06-.8-.19L12 19.11l-5.43 3.05c-.57.29-1.21.27-1.73-.05-.53-.32-.84-.88-.84-1.49V4.25C4 2.73 5.23 1.5 6.75 1.5h10.5C18.77 1.5 20 2.73 20 4.25v16.36c0 .61-.31 1.17-.84 1.49-.28.18-.59.27-.91.27zM12 17.5c.13 0 .25.03.37.1l5.79 3.25c.09.04.17 0 .22-.02.04-.03.12-.09.12-.21V4.25c0-.69-.56-1.25-1.25-1.25H6.75c-.69 0-1.25.56-1.25 1.25v16.37c0 .12.07.19.12.21.04.03.14.06.24.01l5.77-3.24c.12-.07.24-.1.37-.1z"></path></svg>
+                            Save</div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Clearance and top deals -->
+        <div class="whole-outlet-container">
+            <div style="display:flex; flex-direction:row; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; grid-gap:50px;">
+                <!-- Clearance Box -->
+                <div class="outlet-deals-container-border">
+                    <!-- Outlet Deals Icon -->
+                    <div class="outlet-deals-container"><div style="color:#fdef22; margin:2px 5px 2px 5px;">Outlet</div> <div style="color:#ffffff; margin:2px 5px 2px 2px;">Deals</div></div>
+                    <!-- section underneath that -->
+                    <div style="display: flex; flex-direction:row;">
+                        <!-- Clearance, open-box, and more stack column -->
+                        <a href="https://www.bestbuy.com/site/electronics/outlet-refurbished-clearance/pcmcat142300050026.c?id=pcmcat142300050026" style="text-decoration: none;"><div class="clearance-bold-text">
+                            <div style="display: flex; flex-direction:row; color:#ac0f0f;"><div>Clearance</div><div style="color:#000000">,</div></div>
+                            <div style="color:#000000">open-box</div>
+                            <div style="display: flex; flex-direction:row;"><div style="color:#000000">and more</div><div style="color:#ac0f0f">.</div></div>
+                        </div></a>
+                        <!-- Text on the side of that + a button link-->
+                        <div style="margin:auto 20px auto auto; ">
+                            <div style="flex-wrap:wrap; width: 500px; overflow-wrap: normal; margin-bottom:20px;">Save when you shop the Best Buy Outlet for clearance, open-box, refurbished and pre-owned items.</div>
+                            <a href="https://www.bestbuy.com/site/electronics/outlet-refurbished-clearance/pcmcat142300050026.c?id=pcmcat142300050026"><button class="button-clearance-section"><div style="margin: 4px 4px 4px 4px;">View Outlet Deals</div></button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Top Deals Box -->
+                <div>
+                    <div class="outlet-deals-container-border">
+                    <!-- Column for top deals logo and image of item -->
+                    <div style="display:flex; flex-direction:row;">
+                    <div style="display:flex; flex-direction:column;">
+                    <div class="parallelogram" style="margin-right: 180px;"><div style="margin:2px 10px 2px 10px;">Top Deals</div></div>
+                    <a href="https://www.bestbuy.com/site/samsung-65-class-s90c-oled-4k-uhd-smart-tizen-tv/6536964.p?skuId=6536964"><img src="images/viewed/samsung-oled.jpg" style="width: 210px; height:140px; margin-left:50px; margin:0px 50px 10px 50px;"/></a>
+                    </div>
+                    <!-- Text right next to the image -->
+                    <div style="margin:auto 20px auto auto;">
+                        <div style="display: flex; flex-direction:column; flex-wrap:wrap; width: 500px; overflow-wrap: normal; margin-bottom:20px;">
+                            <a href="https://www.bestbuy.com/site/samsung-65-class-s90c-oled-4k-uhd-smart-tizen-tv/6536964.p?skuId=6536964"><div style="margin-top:50px;">Samsung - 65" Class S90C OLED 4K UHD Smart Tizen TV</div></a>
+                            <div style="font-weight:700;">$1,599.99</div>
+                            <div style="text-decoration: line-through;">$2,099.99</div>
+                        </div>
+                        <a href="https://www.bestbuy.com/site/electronics/top-deals/pcmcat1563299784494.c?id=pcmcat1563299784494"><button class="button-clearance-section"><div style="margin: 4px 4px 4px 4px;">Shop all Top Deals</div></button></a>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <!-- Insignia Cooker Recall -->
+        <div class="font" style="background-color: #fdef22;">
+            <a href="https://www.recallrtr.com/pc" style="text-decoration:none; color: #000000;">
+            <div style="display: flex; flex-direction:row; align-items:center; justify-content:center;">
+            <div style="font-size:18px; font-weight:600; display: flex; text-align:center; justify-content:center; margin-top:10px; margin-bottom:10px;">Insignia Multi-Function Pressure Cooker Recall.</div>
+            <div style="display:flex; flex-direction:row; margin:auto 0px auto 40px;"><div>Learn More</div><i style="margin-left: 5px;">></i></div>
+            </div>
+            </a>
+        </div>
+
+        <!-- My Best Buy Total and Plus Member Deals -->
+        <div class="font" style="display:flex; flex-direction:row; align-items:center; justify-content:center; margin-top: 20px;">
+            <div style="display:flex; flex-direction:column; grid-gap:30px; margin:auto 40px auto auto;">
+                <div><img style="width:150px" src="images/my-bestbuy-membership/my-bestbuy-membershipstm.svg"></div>
+                
+                <div style="font-size: 25px;">Don't miss out on the best deals</div>
+
+                <div><div style="text-wrap:wrap;word-wrap: break-word;width: 300px;">Unlock even more exclusive member deals when you become a My Best Buy Plus™ or My Best Buy Total™ member.</div></div>
+
+                <div><a style="color:#0439aa" href="https://www.bestbuy.com/site/top-deals/member-exclusive-deals/pcmcat1651770167686.c?id=pcmcat1651770167686">Discover more exclusive deals</a></div>
+            </div>
+            <!-- Airpods Deal -->
+            <div class = "outlet-deals-container-border outline" style="display:flex; flex-direction:column; grid-gap:20px; margin:auto 40px auto 1px;">
+                <div style="display:flex; align-items: center; justify-content:center;"><img style="object-fit:scale-down; width: 135px; margin-top: 20px;" src="images/my-bestbuy-membership-deals/airpods-3rd-gen.jpg"/></div>
+                <a style="color:black; text-decoration:none;" href="https://www.bestbuy.com/site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuId=6376551"><div style="text-wrap:wrap;word-wrap: break-word;width: 400px;margin-left: 10px;">Apple - AirPods (3rd generation) with Lightning Charging Case - White</div></a>
+                <div style="margin-left: 10px; font-size:25px; font-weight:650;">$169.99</div>
+                <div class = "outlet-deals-container-border" style="margin-left: 10px; margin-right:40%;"><div style="margin: 5px 2px 5px 4px;"><span style="color:#da1c1c">+ Save $8.50</span> with Plus or Total</div></div>
+                <button class="cart-btn button-clearance-section"><div>Add to Cart</div></button>
+            </div>
+            <!-- Ipad 10th Gen Deal -->
+            <div class = "outlet-deals-container-border outline" style="display:flex; flex-direction:column; grid-gap:20px; margin:auto 40px auto 1px;">
+                <div style="display:flex; align-items: center; justify-content:center;"><img style="object-fit:scale-down; width: 180px; margin-top: 20px;" src="images/my-bestbuy-membership-deals/ipad-10.9-10th-gen-pink.jpg"/></div>
+                <a style="color:black; text-decoration:none;" href="https://www.bestbuy.com/site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuId=6376551"><div style="text-wrap:wrap;word-wrap: break-word;width: 400px; margin-left: 10px;">Apple - 10.9-Inch iPad - Latest Model - (10th Generation) with Wi-Fi - 64GB - Pink</div></a>
+                <div style="margin-left: 10px; font-size:25px; font-weight:650;">$449.00</div>
+                <div class = "outlet-deals-container-border" style="margin-left: 10px; margin-right:35%;"><div style="margin: 5px 2px 5px 4px;"><span style="color:#da1c1c">+ Save $22.45</span> with Plus or Total</div></div>
+                <button class="cart-btn button-clearance-section"><div>Add to Cart</div></button>
+            </div></a>
+            <!-- Laptop Deal -->
+            <div class = "outlet-deals-container-border outline" style="display:flex; flex-direction:column; grid-gap:20px; margin:auto auto auto 1px;">
+                <div style="display:flex; align-items: center; justify-content:center;"><img style="object-fit:scale-down; width: 210px; margin-top: 20px;" src="images/my-bestbuy-membership-deals/lenovo-yoga-7i-14in-i7.jpg"/></div>
+                <a style="color:black; text-decoration:none;" href="https://www.bestbuy.com/site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuId=6376551"><div style="text-wrap:wrap;word-wrap: break-word;width: 400px; margin-left: 10px;">Lenovo - Yoga 7i 2-in-1 14" 2.2K Laptop - Intel Evo Platform - Intel Core i7-1355U with 16GB Memory - 512GB SSD...</div></a>
+                <div style="margin-left: 10px; font-size:25px; font-weight:650;">$749.99</div>
+                <div class = "outlet-deals-container-border" style="margin-left: 10px; margin-right:35%;"><div style="margin: 5px 2px 5px 4px;"><span style="color:#da1c1c">+ Save $22.45</span> with Plus or Total</div></div>
+                <button class="cart-btn button-clearance-section"><div>Add to Cart</div></button>
+            </div>
+        </div>
+
+        <!-- Current Ads section -->
+        <div class="font" style="display:flex; flex-direction:row; align-items:center; justify-content:center; margin-top: 20px;">
+            <!-- Deals on TCL TV -->
+            <div class = "outlet-deals-container-border" style="display:flex; flex-direction:column; grid-gap:20px; margin:auto 40px auto auto;">
+                <div style="width:auto; display:flex; flex-direction:row; margin:20px 0px 0px 20px">
+                    <img style="width:85px; height:50px; margin-right:5%" src="images/bestbuyheaderlogo.png"/>
+                    <img style="width:85px; height:50px; margin-bottom:5px;" src="images/savings/super-bowl-add.webp"/>
+                </div>
+                <div style="margin:-15px 0px 0px 30px; font-size:10px;">OFFICIAL SPONSOR OF SUPER BOWL LVIII</div>
+                <div style="margin:0px 0px 0px 30px; text-wrap:wrap; word-wrap: break-word; width:80%; font-size:25px; font-weight:650;"><a style="text-decoration:none;color:#000000" href="https://www.bestbuy.com/site/promo/select-tcl-savings">Save up to $3,000 on select TCL TVs.</a></div>
+                <div style="margin:0px 0px 0px 30px; font-size:12px;">TCL model 98S550G has a $3,000 savings (not pictured).</div>
+                <div style="align-items:center; justify-content:center">
+                    <img style="width: 350px; margin: 30px 80px 10px 80px " src="images/savings/tcl-savings.jpg"/>
+                </div>
+            </div>
+            <!-- Deals on Select MacBooks -->
+            <div class = "outlet-deals-container-border" style="display:flex; flex-direction:column; grid-gap:20px; margin:auto 20px auto;">
+                <div style="margin:95px auto 95px auto; text-align:center; justify-content:center; text-wrap:wrap; word-wrap: break-word; font-size:18px; font-weight:600;"><a style="text-decoration:none;color:#000000" href="https://www.bestbuy.com/site/searchpage.jsp?st=macbook&_dyncharset=UTF-8&_dynSessConf=&id=pcat17071&type=page&sc=Global&cp=1&nrp=&sp=&qp=&list=n&af=true&iht=y&usc=All+Categories&ks=960&keys=keys">Save up to $250 on select MacBooks.</a></div>
+                <div style="align-items:center; justify-content:center">
+                    <img style="width: 350px; margin: 40px 80px 20px 80px " src="images/savings/macbook-savings.jpg"/>
+                </div>
+            </div>
+            <!-- Toy Deals -->
+            <div class = "outlet-deals-container-border" style="display:flex; flex-direction:column; grid-gap:20px; margin-right:auto; margin-left:40px; background-color:#1849b4;">
+                <div style="margin:90px 0px 0px 30px; text-wrap:wrap; word-wrap: break-word; width:80%; font-size:25px; font-weight:650; color:#ffffff;"><a style="text-decoration:none;color:#ffffff" href="https://www.bestbuy.com/site/promo/toys-and-collectibles-savings">Save up to %40 on select toys and collectibles.</a></div>
+                <div style="margin:0px 0px 0px 30px; font-size:13px; color:#ffffff;">Minimum savings is 20%.</div>
+                    <img style="align-items:center; justify-content:center; width: 325px; margin: 30px 80px 10px 80px;" src="images/savings/toy-savings.jpg"/>
+            </div>
+        </div>
+        
+        <!--Credit Card Add-->
+        <div class="font" style="margin:30px 0px 30px 0px; display:flex; flex-direction:row; align-items:center; justify-content:center;">
+            <div style="background-color:#1849b4;">
+                <div style="display:flex; align-items:center; justify-content:center;">
+                <div><img style="width:150px; margin-left:480px;" src="images/bestbuy-card/card-image.png"/></div>
+                <div style="margin:0px 20px 0px 20px; text-align:center;">
+                    <div style="font-size: 20px; font-weight:650; color:#ffffff;">Apply Today and Get</div>
+                    <div style="font-size: 40px; font-weight:650; color:#fdef22;">10% Back</div>
+                </div>
+                <div style="font-size:15px;text-wrap: wrap; width:250px; color:#ffffff; margin-right:20px;">in rewards of your first day of purchases when you are approved for the Card.</div>
+                <a style="color:black;" href="https://www.bestbuy.com/site/misc/financing-rewards/pcmcat102500050032.c?id=pcmcat102500050032"><button class="font" style="background-color:#fdef22; font-size:15px; font-weight:650; border-radius:5px; border-style:none; margin-right:480px; cursor: pointer;"><div style="margin:5px 5px 5px 5px;">Learn More</div></button></a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="font">
+                <div style="display:flex; flex-direction:row; justify-content:center;"><div style="display:flex; margin-right:1220px; width:500px; font-size:20px;"><div style="font-weight:650;">Deals Inspired by your shopping</div> <span style="margin-left:5px;">(6 items)</span></div></div>
+                <!--MacBook Air m1-->
+                <div style="display: flex; align-items: center; justify-content:center;">
+                    <div class="you-viewed-item-row" style="margin-bottom:10px;">
+                        <div class="you-viewed-item-container font" style="width:280px;height:250px;">
+                            <img style="width:150px;" src="images/for-you/macbook-air-m1.jpg"/>
+                            <div class="in-line-box" style="margin:20px 10px 10px 10px;"><a style="color:#0138af;" href="https://www.bestbuy.com/site/macbook-air-13-3-laptop-apple-m1-chip-8gb-memory-256gb-ssd-space-gray/5721600.p?skuId=5721600">MacBook Air 13.3" Laptop - Apple M1 chip - 8GB Memory - 256GB SSD - Space Gray</a></div>
+                            <div style="flex-direction: row;">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <a style="font-size: 12px; cursor:pointer;color:#0138af;" href="https://www.bestbuy.com/site/macbook-air-13-3-laptop-apple-m1-chip-8gb-memory-256gb-ssd-space-gray/5721600.p?skuId=5721600#tab=reviews">(22,627)</a>
+                            </div>
+                            <div style="font-weight:700;">$749.99</div>
+                            <div style="text-decoration: line-through; margin-bottom:10px;">$999.99</div>
+                        </div>
+                    <!--MacBook Air m2-->
+                        <div class="you-viewed-item-container font" style="width:280px;height:250px;">
+                            <img style="width:150px;" src="images/for-you/macbook-air-m2.jpg"/>
+                            <div class="in-line-box" style="margin:20px 10px 10px 10px;"><a style="color:#0138af;" href="https://www.bestbuy.com/site/macbook-air-13-6-laptop-apple-m2-chip-8gb-memory-256gb-ssd-midnight/6509650.p?skuId=6509650">MacBook Air 13.6" Laptop - Apple M2 chip - 8GB Memory - 256GB SSD - Midnight</a></div>
+                            <div style="flex-direction: row;">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <a style="font-size: 12px; cursor:pointer;color:#0138af;" href="https://www.bestbuy.com/site/macbook-air-13-6-laptop-apple-m2-chip-8gb-memory-256gb-ssd-midnight/6509650.p?skuId=6509650#tab=reviews">(8,515)</a>
+                            </div>
+                            <div style="font-weight:700;">$949.00</div>
+                            <div style="text-decoration: line-through; margin-bottom:10px;">$1099.99</div>
+                        </div>
+                    <!--Mellennium Flacon Lego-->
+                        <div class="you-viewed-item-container font" style="width:280px;height:250px;">
+                            <img style="width:100px;" src="images/for-you/mellennium-falcon.jpg"/>
+                            <div class="in-line-box" style="margin:30px 10px 0px 10px;"><a style="color:#0138af;" href="https://www.bestbuy.com/site/lego-star-wars-millennium-falcon-75192/6425417.p?skuId=6425417">LEGO - Star Wars Millennium Falcon 75192</a></div>
+                            <div style="flex-direction: row;">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <a style="font-size: 12px; cursor:pointer;color:#0138af;" href="https://www.bestbuy.com/site/reviews/lego-star-wars-millennium-falcon-75192/6425417?variant=A">(43)</a>
+                            </div>
+                            <div style="font-weight:700;">$849.95</div>
+                        </div>
+                        <!--LG M3 OLED 77"-->
+                        <div class="you-viewed-item-container font" style="width:280px;height:250px;">
+                            <img style="width:120px;" src="images/for-you/lg-m3-oled-77.jpg"/>
+                            <div class="in-line-box" style="margin:20px 10px 10px 10px;"><a style="color:#0138af;" href="https://www.bestbuy.com/site/lg-77-class-m3-series-oled-evo-4k-uhd-smart-webos-tv-with-zero-connect-box/6548584.p?skuId=6548584">LG - 77" Class M3 Series OLED evo 4K UHD Smart webOS TV...</a></div>
+                            <div style="flex-direction: row;">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <a style="font-size: 12px; cursor:pointer;color:#0138af;" href="https://www.bestbuy.com/site/reviews/lg-77-class-m3-series-oled-evo-4k-uhd-smart-webos-tv-with-zero-connect-box/6548584?variant=A">(1)</a>
+                            </div>
+                            <div style="font-weight:700;">$4,499.99</div>
+                            <div style="text-decoration: line-through; margin-bottom:10px;">$4,999.99</div>
+                        </div>
+                        <!--samsung soundbar q60c-->
+                        <div class="you-viewed-item-container font" style="width:280px;height:250px;">
+                            <img style="width:150px;" src="images/for-you/samsung-q-series-q60c.jpg"/>
+                            <div class="in-line-box" style="margin:20px 10px 10px 10px;"><a style="color:#0138af;" href="https://www.bestbuy.com/site/samsung-q-series-3-1ch-dolby-atmos-soundbar-w-q-symphony-titan-black/6535892.p?skuId=6535892">Samsung - Q-Series 3.1ch Dolby Atmos Soundbar w/Q-Symphony...</a></div>
+                            <div style="flex-direction: row;">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <a style="font-size: 12px; cursor:pointer;color:#0138af;" href="https://www.bestbuy.com/site/reviews/samsung-q-series-3-1ch-dolby-atmos-soundbar-w-q-symphony-titan-black/6535892?variant=A">(370)</a>
+                            </div>
+                            <div style="font-weight:700;">$299.99</div>
+                            <div style="text-decoration: line-through; margin-bottom:10px;">$499.99</div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+
+        </div>
+    </body>
+
+    <footer class="top-footer footer-color">
+        <!--Footer First Row Icons-->
+        <div class="font" style="align-items: center; display:flex; flex-direction:row; margin:50px 0px 50px 0px;">
+            <div style="display:flex; flex-direction:column; align-items:center; justify-content:center;margin-right:300px;">
+                <div style="width: 80px; align-items:center;"><svg aria-hidden="true" role="img" viewBox="0 0 100 100" fill="#70757D">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve">
+                        <path d="M16.04.73C7.64.73.8 7.57.8 15.97s6.84 15.25 15.24 15.25c8.41 0 15.25-6.84 15.25-15.25 0-8.4-6.84-15.24-15.25-15.24zm0 28.53a13.3 13.3 0 0 1 0-26.58 13.3 13.3 0 0 1 0 26.58zm1.41-5.38a1.45 1.45 0 1 1-2.9 0 1.45 1.45 0 0 1 2.9 0zm3.73-12.56c0 2.3-1.47 3.5-2.65 4.48-.94.77-1.5 1.28-1.5 1.98v1.96a.98.98 0 0 1-1.96 0v-1.96c0-1.66 1.17-2.63 2.21-3.49 1.05-.86 1.95-1.6 1.95-2.97 0-.03-.04-3.05-3.19-3.05-3.06 0-3.38 3.1-3.4 3.24a.98.98 0 1 1-1.95-.18c.17-1.74 1.5-5.02 5.35-5.02 3.77 0 5.14 3 5.14 5z">
+                        </path></svg></svg></div>
+                <a style="color: #0138af;" href="https://www.bestbuy.com/support"><div>Visit our Support Center</div></a>
+            </div>
+
+            <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; margin-right:300px;">
+                <div style="width: 80px; align-items:center;"><svg aria-hidden="true" role="img" viewBox="0 0 100 100" fill="#70757D">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve">
+                        <path d="M30 9.43a.92.92 0 0 1-.36-.07L16 4.07 2.36 9.36a1 1 0 0 1-1.29-.57.99.99 0 0 1 .57-1.29l13.64-5.29c.46-.18.98-.18 1.45 0L30.36 7.5A1 1 0 0 1 30 9.43z"></path>
+                        <path d="M16 30a.98.98 0 0 1-.41-.09l-6.24-2.77a1 1 0 0 1-.51-1.32 1 1 0 0 1 1.32-.51l5.84 2.6 13-5.77V9.92L16.38 15.1a1 1 0 0 1-.76 0L3 9.92v12.22l2.93 1.3a1 1 0 0 1 .51 1.32 1 1 0 0 1-1.32.51L1.59 23.7a1 1 0 0 1-.59-.91V8.43a1 1 0 0 1 .44-.83c.28-.19.63-.22.94-.1L16 13.09 29.62 7.5c.31-.13.66-.09.94.09.27.19.44.5.44.84v14.36c0 .4-.23.75-.59.91l-14 6.21A.98.98 0 0 1 16 30z"></path>
+                        <path d="M16 29.53a1 1 0 0 1-1-1V14.17c0-.55.45-1 1-1s1 .45 1 1v14.36a1 1 0 0 1-1 1z"></path>
+                        <path d="M23.54 19.48a1 1 0 0 1-1-1v-6.49L8.83 6.85a1 1 0 0 1 .7-1.88l14.36 5.38a1 1 0 0 1 .65.94v7.18a1 1 0 0 1-1 1.01z">
+                        </path></svg></svg></div>
+                <a style="color: #0138af;" href="https://www.bestbuy.com/identity/signin?token=tid%3Ae90dfb09-bcc9-11ee-86bd-12295ff4bd89"><div>Check Your Order Status</div></a>
+            </div>
+
+            <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; margin-right:300px;">
+                <div style="width: 80px; align-items:center;"><svg aria-hidden="true" role="img" viewBox="0 0 100 100" fill="#70757D">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve">
+                        <path d="M29.55 17.25h-.52l-2.56-5.2a.98.98 0 0 0-.88-.55h-4.05V4.77a.98.98 0 0 0-.97-.98H4.03a.98.98 0 0 0-.98.98v2.15a.98.98 0 0 0 1.95 0V5.75h14.6v11.48H5v-.5a.98.98 0 0 0-1.95 0v5.67a2.43 2.43 0 0 0 2.43 2.43h.8a3.53 3.53 0 0 0 7.04 0h8.93a3.53 3.53 0 0 0 7.05 0h.25c1.35 0 2.45-1.1 2.45-2.45V19.7c0-1.35-1.1-2.45-2.45-2.45zm-19.75 9a1.58 1.58 0 1 1 0-3.17 1.58 1.58 0 0 1 0 3.17zm15.97 0a1.58 1.58 0 1 1 0-3.17 1.58 1.58 0 0 1 0 3.17zm4.28-3.87a.5.5 0 0 1-.5.5h-.74a3.52 3.52 0 0 0-6.06 0h-9.92a3.53 3.53 0 0 0-3.03-1.75c-1.3 0-2.42.7-3.03 1.74h-1.3A.47.47 0 0 1 5 22.4v-3.21h15.58l.1.01c.54 0 .97-.44.97-.98v-4.76H25l2.55 5.2a1 1 0 0 0 .88.54h1.13c.27 0 .5.22.5.5v2.68z"></path>
+                        <path d="M8.98 13.44a.98.98 0 0 0-.98-.97l-7.02.01a.98.98 0 0 0 0 1.96L8 14.42c.54 0 .98-.44.98-.98zM4 11.15h4a.98.98 0 0 0 0-1.96H4a.98.98 0 0 0 0 1.96z">
+                        </path></svg></svg></div>
+                <a style="color: #0138af;" href="https://www.bestbuy.com/site/help-topics/shipping-delivery-store-pickup/pcmcat316000050003.c?id=pcmcat316000050003"><div>Shipping, Delivery & Store Pickup</div></a>
+            </div>
+
+            <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; margin-right:300px;">
+                <div style="width: 80px; align-items:center;"><svg aria-hidden="true" role="img" viewBox="0 0 100 100" fill="#70757D">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve"><path d="M13.54 14.45h5.12a.98.98 0 0 0 0-1.95h-5.12a.98.98 0 0 0 0 1.95z"></path>
+                        <path d="M24.36 8.59H7.84a.98.98 0 0 0-.97.98V22.1c0 .54.43.97.97.97h16.52c.54 0 .98-.43.98-.97V9.57a.98.98 0 0 0-.98-.98zm-.98 12.53H8.82V10.54h14.56v10.58z"></path>
+                        <path d="m31.16 4.57-2.95-2.95A.98.98 0 1 0 26.83 3l1.28 1.28H11.94a.98.98 0 0 0 0 1.95H28.1l-1.28 1.29A.98.98 0 0 0 28.2 8.9l2.95-2.95a.98.98 0 0 0 0-1.38zM18.48 25.4H3.93l1.28-1.28a.98.98 0 1 0-1.38-1.38L.88 25.69a.98.98 0 0 0 0 1.38l2.95 2.95a.97.97 0 0 0 1.38 0c.39-.38.39-1 0-1.38l-1.28-1.29h14.55a.98.98 0 1 0 0-1.95z">
+                        </path></svg></svg></div>
+                <a style="color: #0138af;" href="https://www.bestbuy.com/site/help-topics/return-exchange-policy/pcmcat260800050014.c?id=pcmcat260800050014"><div>Returns & Exchagnes</div></a>
+            </div>
+
+            <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; ">
+                <div style="width: 80px; align-items:center;"><svg aria-hidden="true" role="img" viewBox="0 0 100 100" fill="#70757D">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve">
+                        <path d="M15.83.7h-.07C8.64.7 3.11 6.04 1.32 11.36c-.54 1.62-1.3 4.9-.2 8.62 1.62 5.52 7.15 11.08 14.6 11.08h.11c8.23-.06 15.18-7.02 15.18-15.19C31.01 7.68 24.06.73 15.83.7zm-.01 28.41h-.1c-6.49 0-11.3-4.85-12.72-9.67-.95-3.21-.3-6.05.17-7.45 1.57-4.65 6.4-9.34 12.6-9.34h.05c7.18.03 13.24 6.1 13.24 13.23 0 7.12-6.07 13.18-13.24 13.23z"></path>
+                        <path d="M16.48 15.04c-1.96-.46-2.43-.81-2.43-1.6v-.03c0-.67.61-1.2 1.66-1.2.8 0 1.56.26 2.34.77.15.08.3.13.47.13.46 0 .84-.37.84-.83a.8.8 0 0 0-.4-.72 5.46 5.46 0 0 0-2.2-.86c.02-.08.05-.15.05-.24V8.14a.98.98 0 0 0-1.95 0v2.32c0 .09.02.16.04.24-1.57.29-2.64 1.38-2.64 2.87v.03c0 1.88 1.22 2.52 3.4 3.04 1.88.44 2.29.83 2.29 1.56v.03c0 .75-.7 1.28-1.8 1.28a4.44 4.44 0 0 1-2.86-1.05.83.83 0 0 0-.52-.16.83.83 0 0 0-.5 1.51c.8.6 1.7.98 2.64 1.16a.92.92 0 0 0-.05.28v2.32a.98.98 0 0 0 1.95 0v-2.32c0-.07-.03-.13-.04-.2 1.77-.22 2.97-1.3 2.97-3v-.03c0-1.68-1.1-2.45-3.26-2.98z">  
+                        </path></svg></svg></div>
+                <a style="color: #0138af;" href="https://www.bestbuy.com/site/help-topics/return-exchange-policy/pcmcat260800050014.c?id=pcmcat260800050014"><div>Returns & Exchagnes</div></a>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-color">
+        <div class="font" style="display:flex; flex-direction: row; margin-left:200px; padding-top:50px;">
+            <div style="margin-right: 300px;">
+                <div style="font-weight:bold; margin-bottom:10px;">Order & Purchases</div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/identity/signin?token=tid%3A0bf83fa9-bccd-11ee-86bd-12295ff4bd89">Check Order Status</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/help-topics/shipping-delivery-store-pickup/pcmcat316000050003.c?id=pcmcat316000050003">Shipping, Delivery & Pickup</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/help-topics/return-exchange-policy/pcmcat260800050014.c?id=pcmcat260800050014">Returns & Exchanges</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/help-topics/price-match-guarantee/pcmcat290300050002.c?id=pcmcat290300050002">Price Match Guarantee</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/help-topics/product-recalls/pcmcat114800050015.c?id=pcmcat114800050015">Product Recalls</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/services/best-buy-trade-in/pcmcat133600050011.c?id=pcmcat133600050011">Trade-In Program</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/electronics/gift-cards/cat09000.c?id=cat09000#/">Gift Cards</a></div>
+            </div>
+
+            <div style="margin-right: 300px;">
+                <div style="font-weight:bold; margin-bottom:10px;">Support & Services</div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/support">Visit our Support Center</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/services/triage/shopping">Shop with an Expert</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/services/triage/home">Schedule a Service</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/dossier/service/appointmentfinder">Manage an Appointment</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/electronics/services/pcmcat1528819595254.c?id=pcmcat1528819595254">Protection & Support Plans</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/services/recycling/pcmcat149900050025.c?id=pcmcat149900050025">Haul Away & Recycling</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/contact-us">Contact Us</a></div>
+            </div>
+            
+            <div style="">
+                <div style="font-weight:bold; margin-bottom:10px;">Partnerships</div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/partnerships/best-buy-affiliate-program/pcmcat198500050002.c?id=pcmcat198500050002">Affiliate Program</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/misc/influencer-network/pcmcat1595615592193.c?id=pcmcat1595615592193">Influencer Network</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuyads.com/">Advertise with Us</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://developer.bestbuy.com/">Developers</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuyhealth.com/">Best Buy Health</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/bestbuy-business/bestbuy-education/pcmcat356600050000.c?id=pcmcat356600050000">Best Buy Education</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/electronics/bestbuy-business/pcmcat230900050001.c?id=pcmcat230900050001">Best Buy Business</a></div>
+            </div>
+        </div>
+
+        <div class="font" style="display:flex; flex-direction: row; margin-left:200px; margin-top:20px;">
+            <div style="margin-right: 300px;">
+                <div style="font-weight:bold; margin-bottom:10px;">Payment Options</div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/misc/financing-rewards/pcmcat102500050032.c?id=pcmcat102500050032">My Best Buy® Credit Card</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/identity/signin?token=tid%3A99d7c174-bccf-11ee-a14c-0ebd16fe7667">Pay Your Bill at Citibank</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/financing-rewards/progressive-leasing/pcmcat1535574988808.c?id=pcmcat1535574988808">Lease to Own</a></div>
+            </div>
+
+            <div style="margin-right: 300px;">
+                <div style="font-weight:bold; margin-bottom:10px;">Rewards & Membership</div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/electronics/best-buy-membership/pcmcat1679668833285.c?id=pcmcat1679668833285">My Best Buy Memberships</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/identity/signin?token=tid%3Ad1bed2b1-bccf-11ee-9dec-12f9607b4a4f">View Points & Certificates</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://www.bestbuy.com/loyalty/catalog">Member Offers</a></div>
+            </div>
+            
+            <div style="margin-left:15px;">
+                <div style="font-weight:bold; margin-bottom:10px;">About Best Buy</div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://corporate.bestbuy.com/">Corporate Information</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://jobs.bestbuy.com/bby">Careers</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://corporate.bestbuy.com/our-goals/">Corporate Responsibility</a></div>
+                <div style="margin-bottom:10px;"><a style="color: #0138af;" href="https://corporate.bestbuy.com/sustainability/">Sustainability</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer-color font" style="margin-bottom:20px;">
+        <div style="margin-left:200px; border-bottom-color: rgb(129, 129, 128); border-bottom-style: solid; border-width:2px;">How was your experience? <a style="color: #0138af;">Give feedback about our website</a></div>
+
+        <div style="display:flex; flex-direction:row; margin:20px 0px 20px 200px; font-size:12px;">
+            <div style="margin-right:20px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/help-topics/accessibility/pcmcat1496336482680.c?id=pcmcat1496336482680">Accessibility</a></div>
+            <div style="margin-right:20px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/help-topics/terms-and-conditions/pcmcat204400050067.c?id=pcmcat204400050067">Terms & Conditions</a></div>
+            <div style="margin-right:20px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/help-topics/privacy-policy/pcmcat204400050062.c?id=pcmcat204400050062">Privacy</a></div>
+            <div style="margin-right:20px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/privacy-policy/interest-based-ads/pcmcat204400050066.c?id=pcmcat204400050066">Interest-Based Ads</a></div>
+            <div style="margin-right:20px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/privacy-policy/state-privacy-rights/pcmcat204400050063.c?id=pcmcat204400050063">State Privacy Rights</a></div>
+            <div style="margin-right:20px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/help-topics/privacy-policy/pcmcat204400050062.c?id=pcmcat204400050062">Health Data Privacy</a></div>
+            <div style="margin-right:20px;"><a style="color: #0138af;" href="https://www.bestbuy.com/sentry/landing?type=ca_donotsell">Do Not Sell/Share My Personal Information</a></div>
+            <div style="margin-right:20px;"><a style="color: #0138af;" href="https://www.bestbuy.com/sentry/landing?type=optout">Limit Use of My Sensitive Personal Information</a></div>
+            <div style="margin-right:20px;"><a style="color: #0138af;" href="https://www.bestbuy.com/sentry/landing?type=donottarget">Targeted Advertising Opt Out</a></div>
+            <div style="margin-right:20px;"><a style="color: #0138af;" href="https://www.bestbuy.com/site/help-topics/ca-transparency-act/pcmcat263000050003.c?id=pcmcat263000050003">CA Supply Chain Transparency Act</a></div>
+        </div>
+
+        <div style="margin-left:200px; margin-bottom:20px; font-size:12px;">In-store pricing may vary. Prices and offers are subject to change. © 2024 Best Buy. All rights reserved. BEST BUY, the BEST BUY logo, the tag design, and MY BEST BUY are trademarks of Best Buy and its affiliated companies.</div>
+    </footer>
+</html>

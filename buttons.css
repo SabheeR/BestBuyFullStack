@@ -1,0 +1,183 @@
+.button-container {
+    display: inline-block;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #e0e6ef;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: rgb(31, 83, 179);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 350px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #0138af;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+
+
+
+
+
+
+
+
+  .Account-dropbtn {
+    background-color: #3498DB;
+    color: rgb(31, 83, 179);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .Account-dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .Account-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 350px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .Account-dropdown-content a {
+    color: #0138af;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .Account-dropdown a:hover {background-color: #ddd;}
+
+  
+  
+  .show {display: block;}
+
+.menu-buton-title
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 5%;
+    color: #e0e6ef;
+    font-size: 20px;
+    font-weight: 650;
+}
+
+/*Store Pickup*/
+
+.yourStore
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e6ef;
+    font-size: 20px;
+    font-weight: 650;
+    margin-left: 8px;
+}
+
+.storeIcon
+{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: relative;
+    z-index:90;
+}
+
+/*Button*/
+
+.c-button {
+    align-items: center;
+    border-radius: var(--size-round-base);
+    border-style: var(--border-style);
+    border-width: 0;
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: 600;
+    height: 35px;
+    justify-content: center;
+    padding-left: 28px;
+    padding-right: 28px;
+    transition: all .3s ease-out 0s;
+}
+
+.c-button-secondary {
+    background-color:#00287e;
+    color:#e0e6ef;
+}
+
+.c-button-sm {
+    font-size: 13px;
+    height: 30px;
+    padding: 0 var(--size-100);
+    border-radius:10%;
+    margin-top: 10px;
+}
+
+.icon-text-style
+{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-wrap: wrap;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00287e;
+    font-weight: 500;
+}

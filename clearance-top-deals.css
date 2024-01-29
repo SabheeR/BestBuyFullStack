@@ -1,0 +1,65 @@
+.whole-outlet-container
+{
+    display: grid;
+    align-items:center; 
+    justify-content:center;
+    margin-bottom: 50px;
+}
+
+.outlet-deals-container
+{
+    display:flex; 
+    flex-direction:row; 
+    font-size:20px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-weight:640; 
+    background-color:#0439aa;
+
+    margin: 20px 83% 20px 10px;
+}
+
+.outlet-deals-container-border
+{
+    border-color: #c0c4ce;
+    border-style:solid;
+    border-width:1px;
+    border-radius: 4px;
+    color:black;
+}
+
+.clearance-bold-text
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size:35px; 
+    font-weight:700;
+
+    margin:0px 50px 10px 50px;
+}
+
+.button-clearance-section
+{
+    border-color:#042772;
+    border-width:1px;
+    border-radius:3px;
+    background-color:#ffffff;
+    font-weight:700;
+    color:#042772; 
+}
+
+.button-clearance-section:hover
+{
+    background-color:#042772;
+    color:#ffffff; 
+}
+
+.parallelogram
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:20px;
+    margin: 20px;
+    font-weight:640;
+    color: #ffffff;
+    display: inline-block;
+    background:#f12121;    
+    transform: skewX(-10deg);
+}
